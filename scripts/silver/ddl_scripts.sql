@@ -1,4 +1,4 @@
-if object_id (silver.crm_cust_info, 'U') is not null
+if object_id ('silver.crm_cust_info', 'U') is not null
  drop table silver.crm_cust_info;
 
 create table silver.crm_cust_info (
@@ -12,8 +12,8 @@ create table silver.crm_cust_info (
     dwh_create_date datetime2 default getdate()
 );
 
-if object_id (silver.crm_prd_info, 'U') is not null
- drop table silver.crm_cust_info;
+if object_id ('silver.crm_prd_info', 'U') is not null
+ drop table silver.crm_prd_info;
 create table silver.crm_prd_info (
 	prd_id int,
 	prd_key nvarchar(50),
@@ -26,8 +26,8 @@ create table silver.crm_prd_info (
 );
 
 
-if object_id (silver.crm_sales_details, 'U') is not null
- drop table silver.crm_cust_info;
+if object_id ('silver.crm_sales_details', 'U') is not null
+ drop table silver.crm_sales_details;
 create table silver.crm_sales_details (
 	sls_ord_num nvarchar(50),
 	sls_prd_key nvarchar(50),
@@ -42,8 +42,8 @@ create table silver.crm_sales_details (
 );
 
 
-if object_id (silver.erp_cust_az12, 'U') is not null
- drop table silver.crm_cust_info;
+if object_id ('silver.erp_cust_az12', 'U') is not null
+ drop table silver.erp_cust_az12;
 create table silver.erp_cust_az12 (
 	cid nvarchar(50),
 	bdate date,
@@ -52,8 +52,8 @@ create table silver.erp_cust_az12 (
 );
 
 
-if object_id (silver.erp_loc_a101, 'U') is not null
- drop table silver.crm_cust_info;
+if object_id ('silver.erp_loc_a101', 'U') is not null
+ drop table silver.erp_loc_a101;
 create table silver.erp_loc_a101 (
 	cid nvarchar(50),
 	cntry nvarchar(50),
@@ -61,8 +61,8 @@ create table silver.erp_loc_a101 (
 );
 
 
-if object_id (silver.erp_px_cat_g1v2, 'U') is not null
- drop table silver.crm_cust_info;
+if object_id ('silver.erp_px_cat_g1v2', 'U') is not null
+ drop table silver.erp_px_cat_g1v2;
 create table silver.erp_px_cat_g1v2 (
 	id nvarchar(50),
 	cat nvarchar(50),
