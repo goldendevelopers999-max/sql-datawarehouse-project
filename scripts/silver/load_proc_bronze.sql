@@ -1,4 +1,4 @@
-Begin or ALTER    procedure [silver].[load_silver] as 
+Create or ALTER    procedure [silver].[load_silver] as 
 begin
 	declare @starttime datetime , @endtime datetime, @batchstarttime datetime, @batchendtime datetime;
 	begin try 
